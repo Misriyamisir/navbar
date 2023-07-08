@@ -6,7 +6,15 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</head>
+<style>
+ p{
+  height: 200px;
+ }
+ #b1{
+  height: 60px;
+ }
+</style>
+  </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -22,29 +30,112 @@
             
          <ul class="navbar-nav ms-auto pb-5">
               <li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-dark" aria-current="page" href="#"><b>Home</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Courses</a>
+                <a class="nav-link text-dark" href="#"><b>Courses</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Placements</a>
+                <a class="nav-link text-dark" href="#"><b>Placements</b></a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Gallery</a>
+                <a class="nav-link text-dark" href="#"><b>Gallery</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">AboutUs</a>
+                <a class="nav-link text-dark" href="#"><b>AboutUs</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Contact</a>
+                <a class="nav-link text-dark" href="#"><b>Contact</b></a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./image/5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="text-start fs-1 fw-bold 1h-lg">Kerala's No.1 IT Finishing School <br>100% Placement Assisstance</h1>
+              <p class="text-start 1h-lg">We at LUMINAR TECHNOLAB offers best software training and placement in emerging <br> technologies like BIG DATA, Data Science, Machine Learning, PYTHON, Software Testing.</p><br>
+               <!-- Button trigger modal -->
+             <button id="b1" class="btn btn-primary position-absolute border-0 bottom-0 start-0 rounded-pill " style="background-color: purple;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       <b> Training Quote</b>
+      </button>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./image/6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="text-start fs-1 fw-bold 1h-lg">DATA SCIENCE, ML & AI<br>Big Data - Hadoop & Spark<br>Python Data Science</h1>
+              <p class="text-start 1h-lg">We LUMINAR TECHNOLAB offers best software training and placement in emerging <br> technologies like BIG DATA, Handoop, Spark, Data Science, Machine Learning, Deep Learning and<br>AI.</p>
+       </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div>
+      <div class="modal-body">
+        <form action="" class="container">
+          <h1 class="modal-title fs-4" id="exampleModalLabel">Get Training Quote for free</h1>
+          <div>
+            <label for="a1"><b></b></label>
+            <input id="a1" type="text" class="form-control border-0 border-bottom" placeholder="Name">
+        </div>
+        <div>
+          <label for="b1"><b></b></label>
+          <input id="b1" type="email" class="form-control border-0 border-bottom" placeholder="Email">
+          </div>
+      <div>
+        <label for="c1"><b></b></label>
+        <input id="c1" type="text" class="form-control border-0 border-bottom" placeholder="Phone Number">
+    </div>
+    <div>
+      <label for=""><b></b></label>
+      <select class="form-control border-0 border-bottom" name="" id="">
+          <option value="">Select Courses interested in</option>
+          <option value="">PYTHON</option>
+          <option value="">Mearn Stack</option>
+          <option value="">AI</option>
+          <option value="">Machine Learning</option>
+</select>
+  </div>
+  <div>
+    <label for="c1"><b></b></label>
+    <input id="c1" type="text" class="form-control border-0 border-bottom" placeholder="City">
+</div>
+<div>
+  <label for="g1"><b></b></label>
+  <textarea class="form-control border-0 border-bottom" id="g1" placeholder="Comments"></textarea>
+</div><br>
+<div><button type="button" class="btn btn-primary me-auto border-0" style="background-color: purple;">Submit</button></div>
+        </form>
+      </div>
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
 </body>
 </html>
